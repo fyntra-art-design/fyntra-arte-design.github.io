@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Fyntra — Design gráfico, branding e conteúdo digital.">
+<title>Fyntra — Design que faz marcas destacar</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+:root{--ink:#17132b;--muted:#6d6780;--purple:#6b39d6;--pink:#ed5aa8;--blue:#58b8ff;--gold:#f4c95d;--cream:#fbf9ff;--white:#fff;--line:#e9e3f4}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--cream);font-family:"DM Sans",Arial,sans-serif}
+a{text-decoration:none;color:inherit}.container{width:min(1120px,calc(100% - 40px));margin:auto}
+nav{height:82px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:27px;font-weight:800;letter-spacing:-1.5px}.logo i{font-style:normal;color:var(--purple)}
+.navlinks{display:flex;gap:28px;font-size:14px;color:#514a66}.navbtn{padding:11px 18px;border:1px solid #dcd3ee;border-radius:999px;font-weight:700;font-size:14px;background:#fff}
+.hero{position:relative;overflow:hidden;padding:90px 0 105px;background:radial-gradient(circle at 85% 15%,#e6cfff 0,transparent 27%),radial-gradient(circle at 15% 70%,#d9f2ff 0,transparent 23%),var(--cream)}
+.hero:before,.hero:after{content:"✦";position:absolute;color:var(--gold);font-size:30px}.hero:before{top:55px;right:13%}.hero:after{bottom:45px;left:8%}
+.kicker{text-transform:uppercase;letter-spacing:2.5px;font-weight:800;font-size:12px;color:var(--purple)}
+h1{font-family:"Playfair Display",Georgia,serif;font-size:clamp(54px,8vw,94px);line-height:.94;letter-spacing:-4px;max-width:900px;margin:18px 0 28px}
+.gradient{background:linear-gradient(100deg,var(--purple),var(--pink),#4ca9ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:620px;font-size:19px;line-height:1.7;color:var(--muted);margin-bottom:32px}.buttons{display:flex;gap:12px;flex-wrap:wrap}
+.primary{padding:15px 23px;border-radius:999px;background:linear-gradient(100deg,var(--purple),var(--pink));color:white;font-weight:800;box-shadow:0 12px 28px #8b63d944}.secondary{padding:15px 23px;border-radius:999px;background:#fff;border:1px solid var(--line);font-weight:800}
+section{padding:92px 0}.sectionhead{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:38px}.sectionhead h2{font-family:"Playfair Display",Georgia,serif;font-size:48px;letter-spacing:-2px;line-height:1;margin:8px 0 0}.sectionhead p{max-width:420px;color:var(--muted);line-height:1.7}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:#fff;border:1px solid var(--line);border-radius:25px;padding:28px;min-height:250px;box-shadow:0 10px 35px #3220600a}.icon{width:48px;height:48px;border-radius:15px;display:grid;place-items:center;background:#f1eaff;font-size:23px}.card h3{font-size:23px;margin:38px 0 8px}.card p{color:var(--muted);line-height:1.65;margin:0}
+.about{background:var(--ink);color:#fff}.aboutgrid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.about h2{font-family:"Playfair Display",Georgia,serif;font-size:55px;line-height:1;letter-spacing:-2px;margin:12px 0 25px}.about p{color:#c5bfd5;line-height:1.8}.points{display:grid;gap:12px}.point{padding:19px 20px;border:1px solid #ffffff1a;border-radius:17px;background:#ffffff08}.point strong{display:block;margin-bottom:5px}.point span{font-size:14px;color:#aaa3bb}
+.work{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.project{min-height:330px;border-radius:26px;padding:28px;display:flex;align-items:end;position:relative;overflow:hidden;background:linear-gradient(135deg,#6b39d6,#ed5aa8)}.project:nth-child(2){background:linear-gradient(135deg,#1e7fc4,#72d6ff)}.project:nth-child(3){background:linear-gradient(135deg,#f0c24c,#ed7b9d)}.project:nth-child(4){background:linear-gradient(135deg,#29223c,#7c64d9)}.project:after{content:"✦";position:absolute;right:25px;top:22px;color:#fff8;font-size:28px}.projectbox{position:relative;z-index:1;background:#ffffffed;padding:16px 18px;border-radius:18px;min-width:65%}.project h3{margin:0;font-size:25px}.project p{margin:3px 0 0;color:#716a7e;font-size:13px}
+.process{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.step{border-top:2px solid var(--purple);padding-top:20px}.step b{color:var(--purple)}.step h3{margin:18px 0 7px}.step p{color:var(--muted);font-size:14px;line-height:1.6}
+.cta{margin-bottom:50px;border-radius:32px;padding:80px 30px;text-align:center;background:radial-gradient(circle at 20% 20%,#ccecff,transparent 25%),radial-gradient(circle at 80% 10%,#e8c8ff,transparent 30%),#fff;border:1px solid var(--line);position:relative;overflow:hidden}.cta h2{font-family:"Playfair Display",Georgia,serif;font-size:clamp(42px,6vw,70px);line-height:1;letter-spacing:-3px;margin:12px auto 20px;max-width:760px}.cta p{color:var(--muted);max-width:580px;margin:0 auto 28px}
+footer{padding:30px 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;color:#827b91;font-size:13px}
+@media(max-width:800px){.navlinks{display:none}.hero{padding:65px 0 80px}h1{letter-spacing:-2.5px}.services,.aboutgrid,.process{grid-template-columns:1fr}.work{grid-template-columns:1fr}.sectionhead{display:block}.aboutgrid{gap:35px}.about h2{font-size:45px}}
+</style>
+</head>
+<body>
+<header class="container"><nav><a class="logo" href="#"><img src="fyntra-logo.png" alt="Fyntra" style="height:52px;width:auto;display:block"></a><div class="navlinks"><a href="#servicos">Serviços</a><a href="#projetos">Projetos</a><a href="#sobre">Sobre</a></div><a class="navbtn" href="#contacto">Fala comigo</a></nav></header>
+
+<main>
+<section class="hero"><div class="container"><div class="kicker">Design · Branding · Digital</div><h1>Designs que fazem <span class="gradient">marcas destacar.</span></h1><p>Transformamos ideias em identidades visuais fortes, profissionais e memoráveis — do logotipo ao conteúdo para redes sociais.</p><div class="buttons"><a class="primary" href="#contacto">Quero criar a minha marca →</a><a class="secondary" href="#projetos">Ver projetos</a></div></div></section>
+
+<section id="servicos"><div class="container"><div class="sectionhead"><div><div class="kicker">O que fazemos</div><h2>Da ideia ao visual.</h2></div><p>Serviços criativos para negócios, marcas pessoais e projetos que querem ter uma presença mais forte.</p></div><div class="services">
+<article class="card"><div class="icon">✦</div><h3>Design Gráfico</h3><p>Peças digitais, materiais promocionais, menus, posts e outros designs feitos à medida.</p></article>
+<article class="card"><div class="icon">◈</div><h3>Identidade Visual</h3><p>Cores, tipografia, elementos visuais e direção criativa para construir uma marca consistente.</p></article>
+<article class="card"><div class="icon">✎</div><h3>Logotipos</h3><p>Logotipos pensados para representar a essência da marca e serem reconhecidos.</p></article>
+<article class="card"><div class="icon">◎</div><h3>Redes Sociais</h3><p>Conteúdo visual, perfil, destaques e peças que tornam a presença digital mais profissional.</p></article>
+<article class="card"><div class="icon">Aa</div><h3>Biografias</h3><p>Biografias estratégicas para comunicar rapidamente quem és, o que fazes e o teu valor.</p></article>
+<article class="card"><div class="icon">↗</div><h3>Branding & Rebranding</h3><p>Criação ou renovação da imagem de uma marca para ganhar clareza, personalidade e presença.</p></article>
+</div></div></section>
+
+<section id="projetos"><div class="container"><div class="sectionhead"><div><div class="kicker">Portfólio</div><h2>Projetos que brilham.</h2></div><p>Uma seleção dos trabalhos e conceitos criativos da Fyntra.</p></div><div class="work">
+<div class="project"><div class="projectbox"><h3>Sumol</h3><p>Conceito · Design</p></div></div>
+<div class="project"><div class="projectbox"><h3>Artis Nails</h3><p>Branding · Social Design</p></div></div>
+<div class="project"><div class="projectbox"><h3>Pequilinhas Doces</h3><p>Identidade · Design</p></div></div>
+<div class="project"><div class="projectbox"><h3>Smash Burger</h3><p>Branding · Conteúdo</p></div></div>
+</div></div></section>
+
+<section id="sobre" class="about"><div class="container aboutgrid"><div><div class="kicker" style="color:var(--blue)">Sobre a Fyntra</div><h2>Criamos designs que fazem marcas destacar.</h2><p>Na Fyntra, transformamos ideias em identidades visuais fortes, profissionais e memoráveis.</p><p>Destaque. Identidade. Presença.</p></div><div class="points"><div class="point"><strong>🎨 Design gráfico</strong><span>Criação visual para diferentes necessidades.</span></div><div class="point"><strong>✨ Identidade visual</strong><span>Uma imagem coerente e reconhecível.</span></div><div class="point"><strong>📱 Presença digital</strong><span>Conteúdo pensado para redes sociais.</span></div><div class="point"><strong>💡 Conceito criativo</strong><span>Ideias transformadas em marcas com personalidade.</span></div></div></div></section>
+
+<section id="processo"><div class="container"><div class="sectionhead"><div><div class="kicker">Como funciona</div><h2>Simples. Criativo. Teu.</h2></div></div><div class="process"><div class="step"><b>01</b><h3>Conta a ideia</h3><p>Falamos sobre o teu negócio e o que precisas.</p></div><div class="step"><b>02</b><h3>Criamos</h3><p>Transformamos a ideia num conceito visual.</p></div><div class="step"><b>03</b><h3>Ajustamos</h3><p>Refinamos os detalhes até ficar certo.</p></div><div class="step"><b>04</b><h3>Entregamos</h3><p>Recebes o teu design pronto para usar.</p></div></div></div></section>
+
+<section id="contacto"><div class="container"><div class="cta"><div class="kicker">Vamos criar?</div><h2>A tua marca merece destacar-se.</h2><p>Conta-nos o que tens em mente e vamos transformar a ideia numa presença profissional.</p><a class="primary" href="https://wa.me/351912481524">Fala com a Fyntra →</a></div></div></section>
+</main>
+
+<footer class="container"><span>© 2026 Fyntra</span><span>Design · Branding · Digital</span></footer>
+</body>
+</html>
